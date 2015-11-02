@@ -43,9 +43,11 @@
 
 
 		<!-- Bind your application to this controller -->
-		<div class="container">			
-			<ul>
+		<div class="container" ng-app='myApp' ng-controller='customersCtrl'>			
+			<ul> 
+                <li ng-repeat='name in names'>{{name}}</li>
 				<!-- Create your <li> elements in here!  -->
+           
 		
 			</ul>
 		</div>
